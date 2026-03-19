@@ -1,0 +1,61 @@
+# ===========================================
+# Digital System Design Course
+# Ignore EVERYTHING by default
+# ===========================================
+*
+
+# ===========================================
+# Allow directory traversal at all levels
+# ===========================================
+!*/
+
+# ===========================================
+# Allow RTL source files (sources_1/new/)
+# ===========================================
+!**/*.srcs/sources_1/new/**/*.v
+!**/*.srcs/sources_1/new/**/*.sv
+!**/*.srcs/sources_1/new/**/*.vhdl
+!**/*.srcs/sources_1/new/**/*.vhd
+
+# ===========================================
+# Allow testbench files (sim_1/new/)
+# ===========================================
+!**/*.srcs/sim_1/new/**/*.v
+!**/*.srcs/sim_1/new/**/*.sv
+!**/*.srcs/sim_1/new/**/*.vhdl
+!**/*.srcs/sim_1/new/**/*.vhd
+
+# ===========================================
+# Allow constraint files (constrs_1/new/)
+# ===========================================
+!**/*.srcs/constrs_1/new/**/*.xdc
+
+# ===========================================
+# Allow repo config files
+# ===========================================
+!.gitignore
+!push.sh
+
+# ===========================================
+# Force-ignore generated/junk (overrides !*/)
+# ===========================================
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.runs/
+*.gen/
+*.ioplanning/
+*.srcs/sources_1/bd/
+*.srcs/sources_1/ip/
+*.zip
+*.xpr
+*.jou
+*.log
+*.str
+*.wdb
+*.pb
+*.bit
+*.ltx
+*.dcp
+*.rpt
